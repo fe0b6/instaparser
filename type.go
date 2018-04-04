@@ -72,7 +72,7 @@ type ProfileDataGraphql struct {
 }
 
 type ProfileDataUser struct {
-	FollowedBy DataCount `json:"followed_by"`
+	FollowedBy DataCount `json:"edge_followed_by"`
 }
 
 type DataCount struct {
