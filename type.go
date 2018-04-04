@@ -64,6 +64,10 @@ type ProfileDataEntryData struct {
 }
 
 type ProfileDataProfilePage struct {
+	Graphql ProfileDataGraphql `json:"graphql"`
+}
+
+type ProfileDataGraphql struct {
 	User ProfileDataUser `json:"user"`
 }
 

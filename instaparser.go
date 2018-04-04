@@ -117,7 +117,7 @@ func GetProfile(lnk string) (pi ProfileInfo, err error) {
 		return
 	}
 
-	pi.FollowedBy = pd.EntryData.ProfilePage[0].User.FollowedBy.Count
+	pi.FollowedBy = pd.EntryData.ProfilePage[0].Graphql.User.FollowedBy.Count
 
 	return
 }
